@@ -1,0 +1,12 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: replica 
+spec:
+  selector:
+     app: nginx
+  replicas: 4
+  template:
+   metadata:
+     labels:
+     app: n1

@@ -1,0 +1,24 @@
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: php-config
+  labels:
+    type: local
+#spec:
+#  storageClassName: nginx-config-pv
+#  capacity:
+#    storage: 1Gi
+#  accessModes:
+#      - ReadWriteOnce
+#  hostPath:
+#     path: "/mnt/nginx/"
+
+  
+spec:
+  storageClassName: php-config-pv
+  capacity:
+    storage: 1Gi
+  accessModes:
+      - ReadWriteOnce
+  hostPath:
+     path: "/mnt/php/"

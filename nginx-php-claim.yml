@@ -1,0 +1,20 @@
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: cconfig-claim
+spec:
+  storageClassName: nginx-config-pv
+  accessModes:
+     - ReadWriteOnce
+  resources:
+    requests:
+     storage: 1Gi
+  
+#spec:
+#  storageClassName: nginx-config-pv
+#  accessModes:
+#     - ReadWriteOnce
+#  resources:
+#    requests:
+#     storage: 1Gi
+
